@@ -1,0 +1,4 @@
+/* Permission texts shown by iOS. */
+"CFBundleDisplayName" = "Taskflow";
+"NSMicrophoneUsageDescription" = "The microphone is used for voice input to the AI assistant. Recordings are used only for speech recognition.";
+"NSSpeechRecognitionUsageDescription" = "Speech recognition turns your message to the AI assistant into text. Nothing is sent until you tap Send.";

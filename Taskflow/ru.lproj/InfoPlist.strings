@@ -1,0 +1,4 @@
+/* Permission texts shown by iOS. */
+"CFBundleDisplayName" = "Taskflow";
+"NSMicrophoneUsageDescription" = "Микрофон нужен для голосового ввода сообщений ИИ-помощнику. Запись используется только для распознавания речи.";
+"NSSpeechRecognitionUsageDescription" = "Распознавание речи превращает ваше сообщение ИИ-помощнику в текст. Ничего не отправляется без вашего нажатия «Отправить».";

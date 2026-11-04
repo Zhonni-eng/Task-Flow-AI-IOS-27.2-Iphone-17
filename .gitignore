@@ -1,0 +1,17 @@
+# Build output
+.build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+.swiftpm/
+*.ipa
+*.dSYM.zip
+*.dSYM
+# macOS
+.DS_Store
+# Never commit secrets or personal data exports
+*.p12
+*.mobileprovision
+taskflow-data*.json
+taskflow-ai.json

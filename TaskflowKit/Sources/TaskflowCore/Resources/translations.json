@@ -1,0 +1,1690 @@
+{
+ "en": {
+  "actions": {
+   "cancel": "Cancel",
+   "close": "Close",
+   "createTask": "Create task",
+   "delete": "Delete",
+   "edit": "Edit",
+   "newTask": "New task",
+   "save": "Save"
+  },
+  "ai": {
+   "advanced": {
+    "baseUrl": "API address (base URL)",
+    "compatibleHint": "For services with an OpenAI-compatible API: take the address and model ID from the service’s documentation. The key is sent only to this address.",
+    "current": "The key belongs to: {service}.",
+    "detectionHint": "The service is usually recognized from the key and confirmed by a test request. If the key is not recognized, choose the service here - the key is sent only to the chosen service.",
+    "model": "Model ID",
+    "modelHint": "Empty - the default model (Anthropic: claude-opus-5-5, OpenAI: gpt-6-luna, Google: gemini-3.8-flash). A model you enter is checked when connecting and never replaced by another one.",
+    "modelOptional": "Model ID (optional)",
+    "modelPlaceholder": "Default model",
+    "service": "Service",
+    "title": "Advanced"
+   },
+   "apiKey": "API key",
+   "connect": "Connect",
+   "connectErrors": {
+    "AMBIGUOUS_KEY": "The key could belong to several services. Choose the service under Advanced.",
+    "AUTH": "The key was not accepted: it is wrong, revoked or expired.",
+    "BAD_REQUEST": "The service rejected the request.",
+    "BUSY": "A check is already running.",
+    "ENCRYPTION_FAILED": "The key could not be encrypted, so it was not saved.",
+    "ENDPOINT_NOT_FOUND": "No OpenAI-compatible API was found at this address. Check the address (it usually ends in /v1).",
+    "INVALID_BASE_URL": "Enter an API address that starts with https:// (or http:// for this computer).",
+    "INVALID_KEY": "The key is incomplete or has a typo.",
+    "INVALID_MODEL": "Enter a model ID.",
+    "MALFORMED": "The service gave an unexpected response, so the connection was not confirmed.",
+    "MODEL_UNAVAILABLE": "The key was accepted, but this model is not available for it. Enter another model under Advanced.",
+    "NETWORK": "The service cannot be reached. Check your internet connection.",
+    "NO_KEY": "Paste an API key.",
+    "OVERLOADED": "The service is overloaded right now. Please try later.",
+    "PERMISSION": "This key does not have the access it needs.",
+    "PROVIDER_ERROR": "The service is unavailable right now. Please try later.",
+    "RATE_LIMIT": "Too many requests. Wait a moment and try again.",
+    "READ_ONLY": "The AI settings are read-only.",
+    "SECURE_STORAGE_UNAVAILABLE": "Windows secure storage is unavailable, so the key cannot be saved.",
+    "TIMEOUT": "The service did not respond in time. Check your internet connection and try again.",
+    "UNAVAILABLE": "Connecting is available only in the Taskflow app.",
+    "UNIDENTIFIED_KEY": "The service could not be identified from the key. Choose the service under Advanced.",
+    "UNSUPPORTED_KEY": "This service is not supported.",
+    "generic": "Please try again."
+   },
+   "connectFailed": "Connection failed.",
+   "connectedNotice": "Connected. The key was saved encrypted and the assistant is on.",
+   "connecting": "Checking…",
+   "connection": {
+    "connected": "Connected",
+    "failed": "Connection failed",
+    "none": "Not connected",
+    "saved": "Key saved",
+    "testing": "Checking the connection…",
+    "unreadable": "The saved key cannot be read",
+    "unverified": "Key saved but not checked"
+   },
+   "connectionChecked": "Connection checked.",
+   "connectionHint": {
+    "connected": "The key was checked in this session. It is stored encrypted and cannot be viewed.",
+    "failed": "The service did not accept the saved key. Enter a new key or check again.",
+    "none": "Paste an API key and press Connect.",
+    "saved": "The connection has not been checked in this session yet.",
+    "savedAt": "Last successful check: {date}.",
+    "unreadable": "The key was saved by another Windows user or on another computer. Please enter it again.",
+    "unverified": "Press Reconnect to check the key."
+   },
+   "disconnect": "Disconnect and remove key",
+   "disconnectedNotice": "Disconnected. The key was removed and the assistant is off.",
+   "done": "Done",
+   "enable": "Enable the AI assistant",
+   "errors": {
+    "NOT_CONNECTED": "Connect first, then enable the assistant.",
+    "READ_ONLY": "The AI settings are read-only.",
+    "UNAVAILABLE": "AI settings are available only in the Taskflow app.",
+    "generic": "The AI settings could not be saved. Please try again."
+   },
+   "intro": "The AI assistant creates tasks and changes their status and due dates from plain sentences. It needs an API key from an AI service.",
+   "keyPlaceholder": "Paste your API key",
+   "keyReplacePlaceholder": "Paste a new key",
+   "loading": "Loading settings…",
+   "previousKeyKept": "Your previous key is still saved and in use.",
+   "privacyNote": "Connecting sends only a test request, without any tasks. When you write to the assistant, your message, today’s date, your category names and the tasks that match your message (title, status and due date) are sent to the AI service. Descriptions and all other tasks are not sent.",
+   "readOnly": "The AI settings file cannot be written right now; changes are not saved.",
+   "readOnlyNewer": "The AI settings were created by a newer Taskflow and are open read-only.",
+   "reconnect": "Reconnect",
+   "reconnectHint": "Without a new key, Reconnect checks the saved key again.",
+   "secureStorageUnavailable": "Windows secure storage is unavailable, so the key cannot be saved. Taskflow never stores keys as plain text.",
+   "services": {
+    "anthropic": "Anthropic Claude",
+    "auto": "Recognize from the key",
+    "gemini": "Google Gemini",
+    "openai": "OpenAI GPT",
+    "openai-compatible": "OpenAI-compatible API"
+   },
+   "settings": "AI settings",
+   "settingsTitle": "AI assistant",
+   "voice": {
+    "keyLabel": "OpenAI key for voice input",
+    "keyPlaceholder": "Paste an OpenAI key",
+    "needsKey": "Voice input needs an OpenAI key (speech recognition gpt-4o-mini-transcribe). The assistant’s service does not change.",
+    "privacy": "A recording is sent to OpenAI only for transcription, when you use the microphone. The text appears in the message box - you send it yourself.",
+    "ready": "An OpenAI key for voice input is saved. Click the microphone next to the message box.",
+    "replacePlaceholder": "Paste a new OpenAI key",
+    "save": "Save key",
+    "saved": "The key was checked and saved encrypted.",
+    "title": "Voice input",
+    "usesChatKey": "The OpenAI key from the connection above is used. Click the microphone next to the message box."
+   }
+  },
+  "app": {
+   "name": "Taskflow",
+   "offline": "Works offline",
+   "tagline": "Task management",
+   "version": "Version {version}"
+  },
+  "appSettings": {
+   "allDayTime": "Reminder time for tasks without a time",
+   "availability": "Available time for the day plan",
+   "availabilityHint": "The AI assistant plans your day only within these times. If they are not set, it asks.",
+   "availableFrom": "From",
+   "availableUntil": "Until",
+   "errors": {
+    "allDayTimeRequired": "Enter the reminder time.",
+    "availabilityInvalid": "Enter both times; the start must be before the end."
+   },
+   "open": "Settings",
+   "reminders": "Reminders",
+   "remindersEnabled": "Show desktop reminders",
+   "remindersHint": "Reminders appear only while Taskflow is open. Missed ones (computer asleep or app closed) are shown together at the next start if they are less than a day old.",
+   "title": "Settings"
+  },
+  "assistant": {
+   "advancesRecurrence": "Repeating: moves on to the next occurrence.",
+   "afterDeadline": "Some tasks are planned after their deadline.",
+   "applied": {
+    "one": "{count} task created.",
+    "other": "{count} tasks created."
+   },
+   "appliedAll": "Done. Created: {created}, changed: {updated}, deleted: {deleted}.",
+   "appliedNotSaved": {
+    "one": "{count} change is shown on the board but was not saved. Use “Retry” in the notice at the top.",
+    "other": "{count} changes are shown on the board but were not saved. Use “Retry” in the notice at the top."
+   },
+   "appliedSummary": "Done. Tasks created: {created}, changed: {updated}.",
+   "applySelected": {
+    "one": "Apply {count} change",
+    "other": "Apply {count} changes"
+   },
+   "bulkAll": "All tasks, including completed ones.",
+   "bulkCount": {
+    "one": "Affects {count} task:",
+    "other": "Affects {count} tasks:"
+   },
+   "bulkDeleteNote": "These tasks will be deleted.",
+   "bulkMore": "and {count} more",
+   "bulkUnresolved": "No tasks determined",
+   "changed": "Your tasks changed while you were reviewing. Check the selection and try again.",
+   "close": "Close assistant",
+   "conflict": "Conflicts with another change to this task — not selected.",
+   "conflictBlocked": "Several different changes to the same task are selected. Keep one and try again.",
+   "create": {
+    "one": "Create {count} task",
+    "other": "Create {count} tasks"
+   },
+   "deleteTask": "The task will be deleted.",
+   "deletesSeries": "This is a repeating task - all future occurrences are deleted.",
+   "deletesSubtasks": {
+    "one": "Together with {count} subtask.",
+    "other": "Together with {count} subtasks."
+   },
+   "disabled": "The AI assistant is off. Enable it in AI settings.",
+   "dismiss": "Don’t create",
+   "dismissed": "Suggestion declined; no tasks were created.",
+   "due": "Due {date}",
+   "dueChange": "Due: {from} → {to}",
+   "duplicate": "A similar task already exists — not selected.",
+   "duplicateInPlan": "Repeated in this list — not selected.",
+   "empty": "Tell me what to do with your tasks: create, change, delete, reschedule, split into subtasks, plan your day or answer a question about them. I will suggest the changes and you decide what to apply.",
+   "errors": {
+    "AI_DISABLED": "The AI assistant is off. Enable it in AI settings.",
+    "AUTH": "The AI service did not accept the API key. Reconnect in AI settings.",
+    "BUSY": "Please wait for the reply to your previous message.",
+    "CONVERSATION_LIMIT": "This conversation is too long. Start a new conversation.",
+    "INVALID_MESSAGE": "The message is empty or too long (up to 2000 characters).",
+    "MALFORMED": "The assistant replied in an unexpected format. Nothing was created; please try again.",
+    "MODEL_UNAVAILABLE": "The model is not available for this key. Reconnect in AI settings.",
+    "NETWORK": "Cannot reach the AI service. Check your internet connection.",
+    "NO_KEY": "No API key is saved, or it cannot be read. Connect a key in AI settings.",
+    "OVERLOADED": "The AI service is overloaded right now. Please try again shortly.",
+    "PERMISSION": "This API key does not have the access it needs. Reconnect in AI settings.",
+    "RATE_LIMIT": "Too many requests. Wait a moment and try again.",
+    "REFUSED": "The assistant could not handle this request. Try phrasing it differently.",
+    "TIMEOUT": "The reply did not arrive in time. Please try again.",
+    "TRUNCATED": "The reply was too long. Ask for fewer tasks at once.",
+    "UNAVAILABLE": "The AI assistant is available only in the Taskflow app.",
+    "generic": "The assistant could not reply. Nothing was created."
+   },
+   "examples": "For example: “Move my exam to Friday at 16:30”, “Remind me to pay rent on the first of every month”, “Move all overdue tasks to tomorrow” or “What is overdue?”.",
+   "field": {
+    "addLabels": "Add tags: {list} (existing tags are kept)",
+    "category": "Category: {from} → {to}",
+    "description": "Description: “{to}”",
+    "descriptionCleared": "Description: remove",
+    "estimate": "Estimate: {to}",
+    "existingCategory": "category “{name}”",
+    "labels": "Tags: {from} → {to}",
+    "newCategory": "new category “{name}”",
+    "newLabels": "Tags: {list}",
+    "noCategory": "no category",
+    "none": "none",
+    "planned": "Plan: remove",
+    "priority": "Priority: {from} → {to}",
+    "recurrence": "Repeat: {to}",
+    "reminders": "Reminders: {to}",
+    "removeLabels": "Remove tags: {list}",
+    "time": "Time: {from} → {to}",
+    "title": "Title: “{from}” → “{to}”"
+   },
+   "inTask": "in task “{title}”",
+   "inputLabel": "Message to the assistant",
+   "invalid": "Cannot create: {reasons}",
+   "invalidChange": "Cannot apply: {reasons}",
+   "kind": {
+    "create": "New task",
+    "setDueDate": "Due date change",
+    "setStatus": "Status change",
+    "unknown": "Unsupported action"
+   },
+   "kindMore": {
+    "addSubtask": "New subtask",
+    "bulk": "Bulk change",
+    "bulkDelete": "Bulk deletion",
+    "delete": "Deletion",
+    "deleteLabel": "Delete tag",
+    "deleteSubtask": "Subtask deletion",
+    "moveSubtask": "Subtask move",
+    "renameLabel": "Rename tag",
+    "schedule": "Day plan",
+    "update": "Change",
+    "updateSubtask": "Subtask"
+   },
+   "labelDeleteNote": "The tag is removed from every task; the tasks themselves stay.",
+   "labelLimit": "A task can have at most 10 tags - extra tags are not added.",
+   "labelName": "“{label}”",
+   "labelRename": "“{from}” → “{to}”",
+   "labelRenameNote": "The tag is renamed in every task.",
+   "newConversation": "New conversation",
+   "noChange": "Already like this — not selected.",
+   "noDueDate": "no due date",
+   "noEstimate": "Some tasks have no time estimate.",
+   "noMatches": "No matching tasks - nothing to change.",
+   "notConfigured": "To use the assistant, connect an API key in AI settings.",
+   "notSupported": "This action is not supported yet.",
+   "open": "AI assistant",
+   "openSettings": "Open AI settings",
+   "placeholder": "For example: tomorrow, buy groceries",
+   "placeholderOff": "The assistant is off",
+   "privacy": "Your message, the current date and time, your category names, a task summary and only the tasks your message is about (title, status, priority, category, deadline, reminders, repeat; subtasks for tasks you mention) are sent to the AI service. Descriptions, labels and all other tasks are not sent - only their numbers in the summary.",
+   "reasons": {
+    "dateInPast": "date in the past",
+    "emptyFilter": "no task criteria given",
+    "invalidCategory": "invalid category",
+    "invalidChanges": "nothing to change",
+    "invalidDate": "invalid date",
+    "invalidDescription": "invalid description",
+    "invalidEstimate": "invalid estimate",
+    "invalidFilter": "invalid filter",
+    "invalidLabels": "invalid tags",
+    "invalidOperation": "invalid operation",
+    "invalidPriority": "invalid priority",
+    "invalidRecurrence": "invalid repeat",
+    "invalidReminders": "invalid reminders",
+    "invalidSchedule": "invalid plan",
+    "invalidStatus": "invalid status",
+    "invalidSubtask": "invalid subtask",
+    "invalidSubtasks": "invalid subtasks",
+    "invalidTaskId": "invalid task",
+    "invalidTime": "invalid time",
+    "labelConflict": "the same tag is added and removed",
+    "noAvailability": "no available time set (Settings)",
+    "notOffered": "this task was not part of the conversation",
+    "notVerified": "cannot be checked",
+    "outsideAvailability": "outside the available time",
+    "overlap": "overlapping times",
+    "recurrenceWithoutDate": "repeat without a due date",
+    "remindersWithoutDate": "reminders without a due date",
+    "sameTask": "same task",
+    "taskDone": "task already done",
+    "timeWithoutDate": "time without a due date",
+    "titleRequired": "no title",
+    "titleTooLong": "title too long",
+    "tooManySubtasks": "too many subtasks",
+    "tooManyTasks": "too many tasks",
+    "unknownCategory": "no such category",
+    "unknownField": "unexpected data",
+    "unknownLabel": "no such tag",
+    "unknownSubtask": "subtask not found",
+    "unknownTask": "task not found"
+   },
+   "reviewChanges": {
+    "one": "I suggest {count} change:",
+    "other": "I suggest {count} changes:"
+   },
+   "reviewTitle": {
+    "one": "I suggest {count} task:",
+    "other": "I suggest {count} tasks:"
+   },
+   "scheduleFor": "Plan for {date}",
+   "scheduleItem": "{start}–{end} {title}",
+   "scheduleItemOpen": "{start} {title} (no duration given)",
+   "scheduleNote": "This is a suggestion: applying it adds planned times to the tasks; deadlines do not change.",
+   "send": "Send",
+   "statusChange": "Status: {from} → {to}",
+   "subtaskAdd": "Subtask “{title}”",
+   "subtaskDelete": "Delete subtask “{title}”",
+   "subtaskDone": "mark as done",
+   "subtaskMove": "“{title}” → to task “{to}”",
+   "subtaskOpen": "mark as not done",
+   "subtaskRename": "rename to “{title}”",
+   "subtasks": "Subtasks: {list}",
+   "thinking": "The assistant is thinking…",
+   "timeKeepsDates": "The time is kept only for tasks that have a due date.",
+   "title": "AI assistant",
+   "unavailable": "The AI assistant is available only in the Taskflow app.",
+   "undo": "Undo creation",
+   "undoAll": "Undo changes",
+   "undoKept": {
+    "one": "{count} task edited since then was left as it is.",
+    "other": "{count} tasks edited since then were left as they are."
+   },
+   "undone": {
+    "one": "Undone: {count} task removed.",
+    "other": "Undone: {count} tasks removed."
+   },
+   "undoneAll": "Undone. Created tasks removed: {removed}, restored: {restored}.",
+   "undoneNotSaved": {
+    "one": "The task was removed from the board, but the change was not saved. Use “Retry” in the notice at the top.",
+    "other": "{count} tasks were removed from the board, but the change was not saved. Use “Retry” in the notice at the top."
+   },
+   "undoneSummary": "Undone. Tasks removed: {removed}, changes reverted: {restored}.",
+   "unknownTask": "Task not found",
+   "untitled": "Untitled",
+   "usage": "Tokens this session: {input} in, {output} out",
+   "usageCost": "≈ ${cost}",
+   "usageNoCost": "no cost estimate for this model",
+   "voice": {
+    "errors": {
+     "AUTH": "OpenAI did not accept the voice input key. Check it in AI settings.",
+     "EMPTY_RECORDING": "The recording is empty or too short - please try again.",
+     "EMPTY_TRANSCRIPT": "No speech was recognized - try again, closer to the microphone.",
+     "MIC_BUSY": "The microphone is used by another program.",
+     "MIC_DENIED": "No access to the microphone. Allow it in Windows: Settings → Privacy → Microphone.",
+     "MIC_ERROR": "The microphone could not be started.",
+     "MODEL_UNAVAILABLE": "The speech recognition model is not available for this key.",
+     "NETWORK": "Cannot reach OpenAI. Check your internet connection.",
+     "NO_MIC": "No microphone found.",
+     "NO_SPEECH_KEY": "Voice input needs an OpenAI key. Add it in AI settings → Voice input.",
+     "OVERLOADED": "OpenAI is overloaded. Please try later.",
+     "PERMISSION": "The OpenAI key has no access to speech recognition.",
+     "PROVIDER_ERROR": "Speech recognition is unavailable right now. Please try later.",
+     "RATE_LIMIT": "Too many requests to OpenAI. Wait a moment and try again.",
+     "RECORDING_TOO_LONG": "The recording is too long.",
+     "TIMEOUT": "Transcription did not finish in time. Please try again.",
+     "TRUNCATED_TEXT": "The message reached its 2000-character limit - part of the recognized text did not fit.",
+     "generic": "Speech could not be recognized. Please try again."
+    },
+    "recording": "Recording {time}. Click the microphone again to finish.",
+    "start": "Voice input: start recording",
+    "stop": "Stop recording",
+    "transcribing": "Transcribing…"
+   },
+   "you": "You"
+  },
+  "board": {
+   "columnCountFiltered": "{shown} of {total}",
+   "columnEmpty": "No tasks",
+   "columnNoMatches": "No matches",
+   "columnTaskCount": {
+    "one": "{count} task",
+    "other": "{count} tasks"
+   },
+   "dropHere": "Drop a task here",
+   "label": "Kanban board",
+   "sampleNotice": "Sample tasks"
+  },
+  "bulk": {
+   "category": "Category…",
+   "categoryLabel": "Change category of selected tasks",
+   "clear": "Clear selection",
+   "confirmButton": "Delete ({count})",
+   "confirmMessage": {
+    "one": "{count} task will be permanently deleted. This action can’t be undone.",
+    "other": "{count} tasks will be permanently deleted. This action can’t be undone."
+   },
+   "confirmTitle": "Delete selected tasks?",
+   "delete": "Delete",
+   "dueDate": "Due date…",
+   "markDone": "Done",
+   "priority": "Priority…",
+   "priorityLabel": "Change priority of selected tasks",
+   "selected": {
+    "one": "{count} task selected",
+    "other": "{count} tasks selected"
+   },
+   "status": "Status…",
+   "statusLabel": "Change status of selected tasks",
+   "toolbar": "Actions for selected tasks"
+  },
+  "categories": {
+   "add": "Add category",
+   "create": "Create",
+   "createTitle": "New category",
+   "delete": "Delete",
+   "deleteChoice": "Where to move the tasks",
+   "deleteConfirm": "Delete category",
+   "deleteEmpty": "This category has no tasks.",
+   "deleteHasTasks": {
+    "one": "This category has {count} task. It won’t be deleted — choose where to move it.",
+    "other": "This category has {count} tasks. They won’t be deleted — choose where to move them."
+   },
+   "deleteNamed": "Delete category “{name}”",
+   "deleteTitle": "Delete category “{name}”?",
+   "emptyHint": "Create a category to group your tasks.",
+   "errors": {
+    "duplicate": "A category with this name already exists.",
+    "required": "Enter a category name."
+   },
+   "moveToCategory": "Move to category",
+   "moveToUncategorized": "Move to “Uncategorized”",
+   "nameLabel": "Name",
+   "namePlaceholder": "Category name",
+   "rename": "Rename",
+   "renameNamed": "Rename category “{name}”",
+   "renameTitle": "Rename category",
+   "targetCategory": "Category for the tasks",
+   "taskCount": {
+    "one": "{count} task",
+    "other": "{count} tasks"
+   }
+  },
+  "columns": {
+   "done": "Done",
+   "inProgress": "In Progress",
+   "todo": "To Do"
+  },
+  "confirmDelete": {
+   "confirm": "Delete",
+   "message": "“{title}” will be permanently deleted. This action can’t be undone.",
+   "title": "Delete task?"
+  },
+  "datePicker": {
+   "choose": "Choose a due date",
+   "clear": "Clear due date",
+   "in7Days": "In 7 days",
+   "nextMonth": "Next month",
+   "nextWeek": "Next week",
+   "noDate": "No due date",
+   "prevMonth": "Previous month",
+   "quick": "Quick due dates",
+   "quickOption": "{name}: {date}",
+   "today": "Today",
+   "tomorrow": "Tomorrow"
+  },
+  "discard": {
+   "confirm": "Close without saving",
+   "keepEditing": "Keep editing",
+   "message": "Your changes to this task will be lost.",
+   "title": "Close without saving?"
+  },
+  "dnd": {
+   "cancelled": "Move cancelled. Task “{title}” stayed in its original position.",
+   "dropped": "Moved task “{title}” to column “{column}”, position {position} of {total}.",
+   "handle": "Move task “{title}”",
+   "handleTitle": "Drag to move",
+   "instructions": "To pick up a task, press Space or Enter. Use the arrow keys to move it, then press Space or Enter to drop it in its new position, or Escape to cancel.",
+   "movedOver": "Column “{column}”, position {position} of {total}.",
+   "notOver": "Task “{title}” is outside the columns.",
+   "pickedUp": "Picked up task “{title}”. Column “{column}”, position {position} of {total}.",
+   "roleDescription": "movable task"
+  },
+  "error": {
+   "message": "The interface ran into an error. Your saved tasks are safe — reload the window to continue.",
+   "reload": "Reload",
+   "title": "Something went wrong"
+  },
+  "filters": {
+   "button": "Filters",
+   "due": "Due date",
+   "dueOptions": {
+    "overdue": "Overdue",
+    "today": "Due today",
+    "upcoming": "Upcoming"
+   },
+   "labels": "Labels",
+   "noLabels": "No labels yet",
+   "priority": "Priority",
+   "status": "Status"
+  },
+  "header": {
+   "today": "Today, {date}"
+  },
+  "language": {
+   "label": "Interface language",
+   "switchTo": "Switch to {name}"
+  },
+  "layout": {
+   "board": "Board",
+   "label": "View",
+   "list": "List"
+  },
+  "list": {
+   "actions": "Actions",
+   "changeStatus": "Status of “{title}”",
+   "empty": "No tasks here yet.",
+   "label": "Task list",
+   "selectAll": "Select all visible tasks",
+   "selectTask": "Select task “{title}”",
+   "status": "Status",
+   "task": "Task"
+  },
+  "nav": {
+   "allTasks": "All tasks",
+   "mainLabel": "Main navigation",
+   "sectionCategories": "Categories",
+   "sectionTasks": "Tasks",
+   "uncategorized": "Uncategorized"
+  },
+  "priority": {
+   "high": "High",
+   "label": "Priority",
+   "low": "Low",
+   "medium": "Medium"
+  },
+  "sample": {
+   "labels": {
+    "bug": "Bug",
+    "design": "Design",
+    "dev": "Development",
+    "docs": "Docs",
+    "planning": "Planning",
+    "research": "Research",
+    "ui": "UI"
+   },
+   "tasks": {
+    "t1": {
+     "description": "Set goals for the next two weeks and assign tasks across the team.",
+     "title": "Prepare the sprint plan"
+    },
+    "t2": {
+     "description": "Add a section on team workflows and refresh the screenshots.",
+     "title": "Update the onboarding guide"
+    },
+    "t3": {
+     "description": "Run five short interviews and group the key findings.",
+     "title": "Collect user feedback"
+    },
+    "t4": {
+     "description": "Simplify the section structure and align spacing to the new grid.",
+     "title": "Redesign the settings screen"
+    },
+    "t5": {
+     "description": "Notifications arrive late after the computer wakes from sleep.",
+     "title": "Fix delayed notifications"
+    },
+    "t6": {
+     "description": "Cover the main export scenarios and edge cases with empty data.",
+     "title": "Write tests for the reports module"
+    },
+    "t7": {
+     "description": "A build now runs on every change to the main branch.",
+     "title": "Set up automated builds"
+    },
+    "t8": {
+     "description": "The dark theme with mint accents is agreed with the team.",
+     "title": "Approve the color palette"
+    }
+   }
+  },
+  "schedule": {
+   "dueTime": "Due time",
+   "estimate": "Estimate, min",
+   "every": {
+    "daily": "Every day",
+    "dailyN": {
+     "one": "Every {count} day",
+     "other": "Every {count} days"
+    },
+    "monthly": "Every month",
+    "monthlyN": {
+     "one": "Every {count} month",
+     "other": "Every {count} months"
+    },
+    "weekly": "Every week",
+    "weeklyN": {
+     "one": "Every {count} week",
+     "other": "Every {count} weeks"
+    }
+   },
+   "freq": {
+    "daily": "Every day",
+    "monthly": "Every month",
+    "weekly": "Every week"
+   },
+   "interval": {
+    "daily": "Every N days",
+    "monthly": "Every N months",
+    "weekly": "Every N weeks"
+   },
+   "monthlyHint": "On day {day}; in shorter months on the last day.",
+   "needsDate": "Set a due date first - then you can add a time, reminders and a repeat.",
+   "noRepeat": "Does not repeat",
+   "onDays": "{rule}: {days}",
+   "onMonthDay": "{rule}, on day {day}",
+   "plannedInfo": "Day plan: {date}, {time} (not a deadline).",
+   "reminderAtTime": "At the due time",
+   "reminderDays": {
+    "one": "{count} day before",
+    "other": "{count} days before"
+   },
+   "reminderHours": {
+    "one": "{count} hour before",
+    "other": "{count} hours before"
+   },
+   "reminderMinutes": {
+    "one": "{count} minute before",
+    "other": "{count} minutes before"
+   },
+   "reminderOnDay": "On the due day",
+   "reminderWeeks": {
+    "one": "{count} week before",
+    "other": "{count} weeks before"
+   },
+   "reminders": "Reminders",
+   "removePlan": "Remove from plan",
+   "repeat": "Repeat",
+   "repeatHint": "The due date is the next occurrence. When you mark the task done, it moves on to the next occurrence (missed ones are skipped).",
+   "title": "Time, reminders and repeat",
+   "weekdays": {
+    "0": "Sun",
+    "1": "Mon",
+    "2": "Tue",
+    "3": "Wed",
+    "4": "Thu",
+    "5": "Fri",
+    "6": "Sat"
+   },
+   "weekdaysLabel": "Days of the week"
+  },
+  "stats": {
+   "done": "Done",
+   "label": "Task statistics",
+   "noTasks": "No tasks",
+   "overdue": "Overdue",
+   "percent": "{percent}%",
+   "progress": "Share of completed tasks",
+   "progressTitle": "{done} of {total} done",
+   "total": "Total"
+  },
+  "storage": {
+   "copySaved": "The original file was kept as {file}.",
+   "dismiss": "Dismiss",
+   "newerVersion": "This data was created by a newer version of Taskflow. To protect it, changes won’t be saved.",
+   "readError": "The task file couldn’t be opened. To protect it, changes won’t be saved. Please restart the app.",
+   "recovered": "The task file was damaged. The last saved copy has been restored.",
+   "repaired": "Some saved data was invalid and has been corrected.",
+   "retry": "Retry",
+   "saveFailed": "Couldn’t save your changes.",
+   "saveFailedDetail": "Your changes are kept while the app is open. Try saving again.",
+   "unavailable": "Storage is unavailable: changes won’t be kept after closing.",
+   "unreadable": "Saved tasks couldn’t be read, so an empty board was opened."
+  },
+  "subtasks": {
+   "add": "Add",
+   "delete": "Delete subtask “{title}”",
+   "limit": {
+    "one": "You can add up to {count} subtask.",
+    "other": "You can add up to {count} subtasks."
+   },
+   "new": "New subtask",
+   "open": "Add subtasks",
+   "placeholder": "New subtask",
+   "progress": "Subtasks: {done} of {total} done",
+   "title": "Subtasks",
+   "titleLabel": "Subtask {number} title",
+   "toggle": "Subtask “{title}” done",
+   "untitled": "Subtask {number}"
+  },
+  "task": {
+   "completed": "Completed",
+   "dateTime": "{date}, {time}",
+   "deleteTask": "Delete task “{title}”",
+   "due": "Due {date}",
+   "dueOverdue": "Overdue, was due {date}",
+   "dueToday": "Today",
+   "dueTodayFull": "Due today, {date}",
+   "dueTomorrow": "Tomorrow",
+   "dueTomorrowFull": "Due tomorrow, {date}",
+   "editTask": "Edit task “{title}”",
+   "estimate": {
+    "one": "{count} minute",
+    "other": "{count} minutes"
+   },
+   "hasReminders": "Reminders: {list}",
+   "labels": "Labels",
+   "overdue": "Overdue",
+   "planned": "Planned: {date}, {time}",
+   "repeats": "Repeats: {rule}"
+  },
+  "taskForm": {
+   "category": "Category",
+   "createSubtitle": "The task will be added to “{column}”.",
+   "createTitle": "New task",
+   "description": "Description",
+   "descriptionPlaceholder": "Add details, links, or acceptance criteria",
+   "dueDate": "Due date",
+   "editSubtitle": "Update the fields you need and save the task.",
+   "editTitle": "Edit task",
+   "labels": "Labels",
+   "labelsHint": "Press Enter or comma to add a label.",
+   "labelsLimit": {
+    "one": "You can add up to {count} label.",
+    "other": "You can add up to {count} labels."
+   },
+   "labelsPlaceholder": "Type a label",
+   "labelsSuggestions": "Recently used:",
+   "optional": "optional",
+   "removeLabel": "Remove label “{label}”",
+   "title": "Title",
+   "titlePlaceholder": "For example, prepare the quarterly report"
+  },
+  "toast": {
+   "bulkCategory": {
+    "one": "{count} task moved to “{category}”",
+    "other": "{count} tasks moved to “{category}”"
+   },
+   "bulkCompleted": {
+    "one": "{count} task marked as done",
+    "other": "{count} tasks marked as done"
+   },
+   "bulkDeleted": {
+    "one": "{count} task deleted",
+    "other": "{count} tasks deleted"
+   },
+   "bulkDueCleared": {
+    "one": "Due date cleared for {count} task",
+    "other": "Due date cleared for {count} tasks"
+   },
+   "bulkDueDate": {
+    "one": "Due date {date} set for {count} task",
+    "other": "Due date {date} set for {count} tasks"
+   },
+   "bulkNoChange": "The selected tasks are already in that state — nothing was changed.",
+   "bulkPriority": {
+    "one": "Priority “{priority}” set for {count} task",
+    "other": "Priority “{priority}” set for {count} tasks"
+   },
+   "bulkStatus": {
+    "one": "{count} task moved to “{status}”",
+    "other": "{count} tasks moved to “{status}”"
+   },
+   "bulkUnavailable": "The selected tasks are no longer available. Nothing was changed.",
+   "categoryCreated": "Category “{name}” created",
+   "categoryDeleted": "Category “{name}” deleted",
+   "categoryDeletedMoved": {
+    "one": "Category “{name}” deleted; {count} task moved to “{target}”",
+    "other": "Category “{name}” deleted; {count} tasks moved to “{target}”"
+   },
+   "categoryRenamed": "Category renamed to “{name}”",
+   "dismiss": "Dismiss notification",
+   "region": "Notifications",
+   "statusChanged": "Task “{title}” moved to “{status}”",
+   "taskCreated": "Task “{title}” created",
+   "taskDeleted": "Task “{title}” deleted",
+   "taskUpdated": "Task “{title}” saved"
+  },
+  "toolbar": {
+   "clearSearch": "Clear search",
+   "searchLabel": "Search titles and descriptions",
+   "searchPlaceholder": "Search tasks",
+   "sort": {
+    "dueDate": "Due date",
+    "manual": "Manual order",
+    "priority": "Priority",
+    "title": "Title"
+   },
+   "sortLabel": "Sort"
+  },
+  "validation": {
+   "subtaskRequired": "Enter a subtask title.",
+   "titleRequired": "Enter a task title."
+  },
+  "view": {
+   "categoryEmpty": "Nothing here yet. Create a task with “New task”.",
+   "dragDisabled": "While searching, filtering or sorting, tasks can be moved between columns but not reordered. Reset them to reorder tasks.",
+   "noMatches": "No tasks found",
+   "noMatchesHint": "No task matches the current search and filters. Your tasks have not been changed.",
+   "noTasksYet": "No tasks yet. Create your first one with “New task”.",
+   "removeFilter": "Remove “{name}”",
+   "resetAll": "Reset all",
+   "searchChip": "Search: “{query}”",
+   "showing": "Showing {shown} of {total}"
+  }
+ },
+ "ru": {
+  "actions": {
+   "cancel": "Отмена",
+   "close": "Закрыть",
+   "createTask": "Создать задачу",
+   "delete": "Удалить",
+   "edit": "Редактировать",
+   "newTask": "Новая задача",
+   "save": "Сохранить"
+  },
+  "ai": {
+   "advanced": {
+    "baseUrl": "Адрес API (base URL)",
+    "compatibleHint": "Для сервисов с OpenAI-совместимым API: адрес и ID модели берутся из документации сервиса. Ключ отправляется только по этому адресу.",
+    "current": "Ключ относится к сервису: {service}.",
+    "detectionHint": "Сервис обычно определяется по ключу и подтверждается проверочным запросом. Если ключ не распознан, выберите сервис здесь — ключ будет отправлен только в выбранный сервис.",
+    "model": "ID модели",
+    "modelHint": "Пусто — модель по умолчанию (Anthropic: claude-opus-5-5, OpenAI: gpt-6-luna, Google: gemini-3.8-flash). Указанная модель проверяется при подключении и никогда не заменяется другой.",
+    "modelOptional": "ID модели (необязательно)",
+    "modelPlaceholder": "Модель по умолчанию",
+    "service": "Сервис",
+    "title": "Дополнительно"
+   },
+   "apiKey": "API-ключ",
+   "connect": "Подключить",
+   "connectErrors": {
+    "AMBIGUOUS_KEY": "Ключ подходит к нескольким сервисам. Выберите сервис в разделе «Дополнительно».",
+    "AUTH": "Ключ не принят: он неверный, отозван или устарел.",
+    "BAD_REQUEST": "Сервис отклонил запрос.",
+    "BUSY": "Проверка уже идёт.",
+    "ENCRYPTION_FAILED": "Не удалось зашифровать ключ, поэтому он не сохранён.",
+    "ENDPOINT_NOT_FOUND": "По этому адресу не найден OpenAI-совместимый API. Проверьте адрес (обычно он заканчивается на /v1).",
+    "INVALID_BASE_URL": "Укажите адрес API, который начинается с https:// (или http:// для этого компьютера).",
+    "INVALID_KEY": "Ключ скопирован не полностью или с ошибкой.",
+    "INVALID_MODEL": "Укажите ID модели.",
+    "MALFORMED": "Сервис ответил неожиданным образом, подключение не подтверждено.",
+    "MODEL_UNAVAILABLE": "Ключ принят, но эта модель для него недоступна. Укажите другую модель в разделе «Дополнительно».",
+    "NETWORK": "Нет связи с сервисом. Проверьте подключение к интернету.",
+    "NO_KEY": "Вставьте API-ключ.",
+    "OVERLOADED": "Сервис сейчас перегружен. Попробуйте позже.",
+    "PERMISSION": "У этого ключа нет нужного доступа.",
+    "PROVIDER_ERROR": "Сервис сейчас недоступен. Попробуйте позже.",
+    "RATE_LIMIT": "Слишком много запросов. Подождите немного и попробуйте снова.",
+    "READ_ONLY": "Настройки ИИ открыты только для чтения.",
+    "SECURE_STORAGE_UNAVAILABLE": "Защищённое хранилище Windows недоступно, поэтому ключ нельзя сохранить.",
+    "TIMEOUT": "Сервис не ответил вовремя. Проверьте интернет и попробуйте снова.",
+    "UNAVAILABLE": "Подключение доступно только в приложении Taskflow.",
+    "UNIDENTIFIED_KEY": "Не удалось определить сервис по ключу. Выберите сервис в разделе «Дополнительно».",
+    "UNSUPPORTED_KEY": "Этот сервис не поддерживается.",
+    "generic": "Попробуйте ещё раз."
+   },
+   "connectFailed": "Не удалось подключиться.",
+   "connectedNotice": "Подключено. Ключ сохранён в зашифрованном виде, помощник включён.",
+   "connecting": "Проверка…",
+   "connection": {
+    "connected": "Подключено",
+    "failed": "Не удалось подключиться",
+    "none": "Не подключено",
+    "saved": "Ключ сохранён",
+    "testing": "Проверка подключения…",
+    "unreadable": "Сохранённый ключ не читается",
+    "unverified": "Ключ сохранён, но не проверен"
+   },
+   "connectionChecked": "Подключение проверено.",
+   "connectionHint": {
+    "connected": "Ключ проверен в этом сеансе. Он хранится в зашифрованном виде, посмотреть его нельзя.",
+    "failed": "Сервис не принял сохранённый ключ. Введите новый ключ или проверьте ещё раз.",
+    "none": "Вставьте API-ключ и нажмите «Подключить».",
+    "saved": "В этом сеансе подключение ещё не проверялось.",
+    "savedAt": "Последняя успешная проверка: {date}.",
+    "unreadable": "Ключ сохранён другим пользователем Windows или на другом компьютере. Введите ключ заново.",
+    "unverified": "Нажмите «Переподключить», чтобы проверить ключ."
+   },
+   "disconnect": "Отключить и удалить ключ",
+   "disconnectedNotice": "Отключено. Ключ удалён, помощник выключен.",
+   "done": "Готово",
+   "enable": "Включить ИИ-помощника",
+   "errors": {
+    "NOT_CONNECTED": "Сначала подключитесь, затем включите помощника.",
+    "READ_ONLY": "Настройки ИИ открыты только для чтения.",
+    "UNAVAILABLE": "Настройки ИИ доступны только в приложении Taskflow.",
+    "generic": "Не удалось сохранить настройки ИИ. Попробуйте ещё раз."
+   },
+   "intro": "ИИ-помощник создаёт задачи и меняет их статус и сроки по обычным фразам. Для работы нужен API-ключ ИИ-сервиса.",
+   "keyPlaceholder": "Вставьте API-ключ",
+   "keyReplacePlaceholder": "Вставьте новый ключ",
+   "loading": "Загрузка настроек…",
+   "previousKeyKept": "Прежний ключ сохранён и по-прежнему используется.",
+   "privacyNote": "При подключении отправляется только проверочный запрос, без задач. Когда вы пишете помощнику, ИИ-сервису отправляются ваше сообщение, сегодняшняя дата, названия категорий и подходящие к сообщению задачи (название, статус и срок). Описания и остальные задачи не отправляются.",
+   "readOnly": "Файл настроек ИИ сейчас недоступен для записи, изменения не сохраняются.",
+   "readOnlyNewer": "Настройки ИИ созданы более новой версией Taskflow и открыты только для чтения.",
+   "reconnect": "Переподключить",
+   "reconnectHint": "Без нового ключа «Переподключить» заново проверяет сохранённый.",
+   "secureStorageUnavailable": "Защищённое хранилище Windows недоступно, поэтому ключ нельзя сохранить. Taskflow не хранит ключи в открытом виде.",
+   "services": {
+    "anthropic": "Anthropic Claude",
+    "auto": "Определить по ключу",
+    "gemini": "Google Gemini",
+    "openai": "OpenAI GPT",
+    "openai-compatible": "OpenAI-совместимый API"
+   },
+   "settings": "Настройки ИИ",
+   "settingsTitle": "ИИ-помощник",
+   "voice": {
+    "keyLabel": "Ключ OpenAI для голосового ввода",
+    "keyPlaceholder": "Вставьте ключ OpenAI",
+    "needsKey": "Для голосового ввода нужен ключ OpenAI (распознавание речи gpt-4o-mini-transcribe). Сервис помощника при этом не меняется.",
+    "privacy": "Запись отправляется в OpenAI только для распознавания, по нажатию на микрофон. Распознанный текст появляется в поле сообщения — отправляете его вы сами.",
+    "ready": "Ключ OpenAI для голосового ввода сохранён. Нажмите на микрофон рядом с полем сообщения.",
+    "replacePlaceholder": "Вставьте новый ключ OpenAI",
+    "save": "Сохранить ключ",
+    "saved": "Ключ проверен и сохранён в зашифрованном виде.",
+    "title": "Голосовой ввод",
+    "usesChatKey": "Используется ключ OpenAI из подключения выше. Нажмите на микрофон рядом с полем сообщения."
+   }
+  },
+  "app": {
+   "name": "Taskflow",
+   "offline": "Работает офлайн",
+   "tagline": "Управление задачами",
+   "version": "Версия {version}"
+  },
+  "appSettings": {
+   "allDayTime": "Время напоминаний для задач без времени",
+   "availability": "Доступное время для плана дня",
+   "availabilityHint": "ИИ-помощник составляет план дня только в этих пределах. Если время не указано, он спросит.",
+   "availableFrom": "С",
+   "availableUntil": "До",
+   "errors": {
+    "allDayTimeRequired": "Укажите время напоминаний.",
+    "availabilityInvalid": "Укажите оба времени; начало должно быть раньше конца."
+   },
+   "open": "Настройки",
+   "reminders": "Напоминания",
+   "remindersEnabled": "Показывать напоминания на рабочем столе",
+   "remindersHint": "Напоминания приходят, только пока Taskflow открыт. Пропущенные (компьютер спал или программа была закрыта) показываются одним уведомлением при следующем запуске, если прошло не больше суток.",
+   "title": "Настройки"
+  },
+  "assistant": {
+   "advancesRecurrence": "Повторяющаяся: перейдёт к следующему повторению.",
+   "afterDeadline": "Часть задач запланирована позже их срока.",
+   "applied": {
+    "few": "Созданы {count} задачи.",
+    "many": "Создано {count} задач.",
+    "one": "Создана {count} задача.",
+    "other": "Создано {count} задачи."
+   },
+   "appliedAll": "Готово. Создано: {created}, изменено: {updated}, удалено: {deleted}.",
+   "appliedNotSaved": {
+    "few": "{count} изменения видны на доске, но не сохранены. Нажмите «Повторить» в уведомлении сверху.",
+    "many": "{count} изменений видны на доске, но не сохранены. Нажмите «Повторить» в уведомлении сверху.",
+    "one": "{count} изменение видно на доске, но не сохранено. Нажмите «Повторить» в уведомлении сверху.",
+    "other": "{count} изменения видны на доске, но не сохранены. Нажмите «Повторить» в уведомлении сверху."
+   },
+   "appliedSummary": "Готово. Создано задач: {created}, изменено: {updated}.",
+   "applySelected": {
+    "few": "Применить {count} изменения",
+    "many": "Применить {count} изменений",
+    "one": "Применить {count} изменение",
+    "other": "Применить {count} изменения"
+   },
+   "bulkAll": "Все задачи, включая выполненные.",
+   "bulkCount": {
+    "few": "Затронет {count} задачи:",
+    "many": "Затронет {count} задач:",
+    "one": "Затронет {count} задачу:",
+    "other": "Затронет {count} задачи:"
+   },
+   "bulkDeleteNote": "Эти задачи будут удалены.",
+   "bulkMore": "и ещё {count}",
+   "bulkUnresolved": "Задачи не определены",
+   "changed": "Задачи изменились, пока вы смотрели предложение. Проверьте выбор и попробуйте ещё раз.",
+   "close": "Закрыть помощника",
+   "conflict": "Противоречит другому изменению этой задачи — не отмечено.",
+   "conflictBlocked": "Выбрано несколько разных изменений одной задачи. Оставьте одно и попробуйте снова.",
+   "create": {
+    "few": "Создать {count} задачи",
+    "many": "Создать {count} задач",
+    "one": "Создать {count} задачу",
+    "other": "Создать {count} задачи"
+   },
+   "deleteTask": "Задача будет удалена.",
+   "deletesSeries": "Это повторяющаяся задача — удаляются все будущие повторения.",
+   "deletesSubtasks": {
+    "few": "Вместе с {count} подзадачами.",
+    "many": "Вместе с {count} подзадачами.",
+    "one": "Вместе с {count} подзадачей.",
+    "other": "Вместе с {count} подзадачами."
+   },
+   "disabled": "ИИ-помощник выключен. Включите его в настройках ИИ.",
+   "dismiss": "Не создавать",
+   "dismissed": "Предложение отклонено, задачи не созданы.",
+   "due": "Срок: {date}",
+   "dueChange": "Срок: {from} → {to}",
+   "duplicate": "Похожая задача уже есть — не отмечена.",
+   "duplicateInPlan": "Повторяется в этом списке — не отмечена.",
+   "empty": "Напишите, что сделать с задачами: создать, изменить, удалить, перенести, разбить на подзадачи, составить план дня или ответить на вопрос о задачах. Я предложу изменения, а вы решите, что применить.",
+   "errors": {
+    "AI_DISABLED": "ИИ-помощник выключен. Включите его в настройках ИИ.",
+    "AUTH": "ИИ-сервис не принял API-ключ. Переподключитесь в настройках ИИ.",
+    "BUSY": "Подождите ответа на предыдущее сообщение.",
+    "CONVERSATION_LIMIT": "Разговор получился слишком длинным. Начните новый разговор.",
+    "INVALID_MESSAGE": "Сообщение пустое или слишком длинное (до 2000 символов).",
+    "MALFORMED": "Помощник ответил в неожиданном формате. Ничего не создано, попробуйте ещё раз.",
+    "MODEL_UNAVAILABLE": "Модель недоступна для этого ключа. Переподключитесь в настройках ИИ.",
+    "NETWORK": "Нет связи с ИИ-сервисом. Проверьте подключение к интернету.",
+    "NO_KEY": "API-ключ не задан или не читается. Подключите ключ в настройках ИИ.",
+    "OVERLOADED": "ИИ-сервис сейчас перегружен. Попробуйте чуть позже.",
+    "PERMISSION": "У этого API-ключа нет нужного доступа. Переподключитесь в настройках ИИ.",
+    "RATE_LIMIT": "Слишком много запросов. Подождите немного и попробуйте снова.",
+    "REFUSED": "Помощник не смог обработать этот запрос. Попробуйте сформулировать иначе.",
+    "TIMEOUT": "Ответ не пришёл вовремя. Попробуйте ещё раз.",
+    "TRUNCATED": "Ответ оказался слишком длинным. Попросите меньше задач за раз.",
+    "UNAVAILABLE": "ИИ-помощник доступен только в приложении Taskflow.",
+    "generic": "Не удалось получить ответ помощника. Ничего не создано."
+   },
+   "examples": "Например: «Перенеси экзамен на пятницу в 16:30», «Напоминай платить за квартиру 1-го числа каждого месяца», «Перенеси все просроченные на завтра» или «Что у меня просрочено?».",
+   "field": {
+    "addLabels": "Добавить метки: {list} (имеющиеся сохранятся)",
+    "category": "Категория: {from} → {to}",
+    "description": "Описание: «{to}»",
+    "descriptionCleared": "Описание: удалить",
+    "estimate": "Оценка: {to}",
+    "existingCategory": "категория «{name}»",
+    "labels": "Метки: {from} → {to}",
+    "newCategory": "новая категория «{name}»",
+    "newLabels": "Метки: {list}",
+    "noCategory": "без категории",
+    "none": "нет",
+    "planned": "План: убрать",
+    "priority": "Приоритет: {from} → {to}",
+    "recurrence": "Повтор: {to}",
+    "reminders": "Напоминания: {to}",
+    "removeLabels": "Убрать метки: {list}",
+    "time": "Время: {from} → {to}",
+    "title": "Название: «{from}» → «{to}»"
+   },
+   "inTask": "в задаче «{title}»",
+   "inputLabel": "Сообщение помощнику",
+   "invalid": "Нельзя создать: {reasons}",
+   "invalidChange": "Нельзя применить: {reasons}",
+   "kind": {
+    "create": "Новая задача",
+    "setDueDate": "Смена срока",
+    "setStatus": "Смена статуса",
+    "unknown": "Неподдерживаемое действие"
+   },
+   "kindMore": {
+    "addSubtask": "Новая подзадача",
+    "bulk": "Массовое изменение",
+    "bulkDelete": "Массовое удаление",
+    "delete": "Удаление",
+    "deleteLabel": "Удаление метки",
+    "deleteSubtask": "Удаление подзадачи",
+    "moveSubtask": "Перенос подзадачи",
+    "renameLabel": "Переименование метки",
+    "schedule": "План дня",
+    "update": "Изменение",
+    "updateSubtask": "Подзадача"
+   },
+   "labelDeleteNote": "Метка будет снята со всех задач, сами задачи останутся.",
+   "labelLimit": "У задачи может быть не больше 10 меток — лишние не добавятся.",
+   "labelName": "«{label}»",
+   "labelRename": "«{from}» → «{to}»",
+   "labelRenameNote": "Метка будет переименована во всех задачах.",
+   "newConversation": "Новый разговор",
+   "noChange": "Уже так — не отмечено.",
+   "noDueDate": "без срока",
+   "noEstimate": "У некоторых задач нет оценки времени.",
+   "noMatches": "Подходящих задач нет — нечего менять.",
+   "notConfigured": "Чтобы пользоваться помощником, подключите API-ключ в настройках ИИ.",
+   "notSupported": "Это действие пока не поддерживается.",
+   "open": "ИИ-помощник",
+   "openSettings": "Открыть настройки ИИ",
+   "placeholder": "Например: завтра купить продукты",
+   "placeholderOff": "Помощник выключен",
+   "privacy": "ИИ-сервису отправляются ваше сообщение, текущие дата и время, названия категорий, сводка по задачам и только те задачи, о которых идёт речь (название, статус, приоритет, категория, сроки, напоминания, повтор; подзадачи — для упомянутых задач). Описания, метки и остальные задачи не отправляются — из них только количество в сводке.",
+   "reasons": {
+    "dateInPast": "дата в прошлом",
+    "emptyFilter": "не указано, какие задачи",
+    "invalidCategory": "неверная категория",
+    "invalidChanges": "нечего менять",
+    "invalidDate": "неверная дата",
+    "invalidDescription": "неверное описание",
+    "invalidEstimate": "неверная оценка",
+    "invalidFilter": "неверный отбор",
+    "invalidLabels": "неверные метки",
+    "invalidOperation": "неверная операция",
+    "invalidPriority": "неверный приоритет",
+    "invalidRecurrence": "неверный повтор",
+    "invalidReminders": "неверные напоминания",
+    "invalidSchedule": "неверный план",
+    "invalidStatus": "неверный статус",
+    "invalidSubtask": "неверная подзадача",
+    "invalidSubtasks": "неверные подзадачи",
+    "invalidTaskId": "неверная задача",
+    "invalidTime": "неверное время",
+    "labelConflict": "метка одновременно добавляется и убирается",
+    "noAvailability": "не задано доступное время (Настройки)",
+    "notOffered": "эта задача не обсуждалась в разговоре",
+    "notVerified": "нельзя проверить",
+    "outsideAvailability": "вне доступного времени",
+    "overlap": "пересекается по времени",
+    "recurrenceWithoutDate": "повтор без срока",
+    "remindersWithoutDate": "напоминания без срока",
+    "sameTask": "та же задача",
+    "taskDone": "задача уже выполнена",
+    "timeWithoutDate": "время без срока",
+    "titleRequired": "нет названия",
+    "titleTooLong": "слишком длинное название",
+    "tooManySubtasks": "слишком много подзадач",
+    "tooManyTasks": "слишком много задач",
+    "unknownCategory": "такой категории нет",
+    "unknownField": "лишние данные",
+    "unknownLabel": "такой метки нет",
+    "unknownSubtask": "подзадача не найдена",
+    "unknownTask": "задача не найдена"
+   },
+   "reviewChanges": {
+    "few": "Предлагаю {count} изменения:",
+    "many": "Предлагаю {count} изменений:",
+    "one": "Предлагаю {count} изменение:",
+    "other": "Предлагаю {count} изменения:"
+   },
+   "reviewTitle": {
+    "few": "Предлагаю {count} задачи:",
+    "many": "Предлагаю {count} задач:",
+    "one": "Предлагаю {count} задачу:",
+    "other": "Предлагаю {count} задачи:"
+   },
+   "scheduleFor": "План на {date}",
+   "scheduleItem": "{start}–{end} {title}",
+   "scheduleItemOpen": "{start} {title} (длительность не указана)",
+   "scheduleNote": "Это предложение: при применении у задач появится время по плану, сроки не меняются.",
+   "send": "Отправить",
+   "statusChange": "Статус: {from} → {to}",
+   "subtaskAdd": "Подзадача «{title}»",
+   "subtaskDelete": "Удалить подзадачу «{title}»",
+   "subtaskDone": "отметить выполненной",
+   "subtaskMove": "«{title}» → в задачу «{to}»",
+   "subtaskOpen": "снять отметку",
+   "subtaskRename": "переименовать в «{title}»",
+   "subtasks": "Подзадачи: {list}",
+   "thinking": "Помощник думает…",
+   "timeKeepsDates": "Время сохранится только у задач со сроком.",
+   "title": "ИИ-помощник",
+   "unavailable": "ИИ-помощник доступен только в приложении Taskflow.",
+   "undo": "Отменить создание",
+   "undoAll": "Отменить изменения",
+   "undoKept": {
+    "few": "Не тронуты {count} задачи, изменённые после этого.",
+    "many": "Не тронуто {count} задач, изменённых после этого.",
+    "one": "Не тронута {count} задача, изменённая после этого.",
+    "other": "Не тронуты {count} задачи, изменённые после этого."
+   },
+   "undone": {
+    "few": "Отменено: удалены {count} задачи.",
+    "many": "Отменено: удалено {count} задач.",
+    "one": "Отменено: удалена {count} задача.",
+    "other": "Отменено: удалено {count} задачи."
+   },
+   "undoneAll": "Отменено. Удалено созданных: {removed}, возвращено: {restored}.",
+   "undoneNotSaved": {
+    "few": "{count} задачи убраны с доски, но изменение не сохранено. Нажмите «Повторить» в уведомлении сверху.",
+    "many": "{count} задач убраны с доски, но изменение не сохранено. Нажмите «Повторить» в уведомлении сверху.",
+    "one": "Задача убрана с доски, но изменение не сохранено. Нажмите «Повторить» в уведомлении сверху.",
+    "other": "{count} задачи убраны с доски, но изменение не сохранено. Нажмите «Повторить» в уведомлении сверху."
+   },
+   "undoneSummary": "Отменено. Удалено задач: {removed}, возвращено изменений: {restored}.",
+   "unknownTask": "Задача не найдена",
+   "untitled": "Без названия",
+   "usage": "Токены в этом сеансе: {input} на входе, {output} на выходе",
+   "usageCost": "≈ {cost} $",
+   "usageNoCost": "стоимость не рассчитывается для этой модели",
+   "voice": {
+    "errors": {
+     "AUTH": "OpenAI не принял ключ для голосового ввода. Проверьте его в настройках ИИ.",
+     "EMPTY_RECORDING": "Запись пустая или слишком короткая — попробуйте ещё раз.",
+     "EMPTY_TRANSCRIPT": "Речь не распознана — попробуйте ещё раз, ближе к микрофону.",
+     "MIC_BUSY": "Микрофон занят другой программой.",
+     "MIC_DENIED": "Нет доступа к микрофону. Разрешите его в Windows: Параметры → Конфиденциальность → Микрофон.",
+     "MIC_ERROR": "Не удалось включить микрофон.",
+     "MODEL_UNAVAILABLE": "Модель распознавания речи недоступна для этого ключа.",
+     "NETWORK": "Нет связи с OpenAI. Проверьте подключение к интернету.",
+     "NO_MIC": "Микрофон не найден.",
+     "NO_SPEECH_KEY": "Для голосового ввода нужен ключ OpenAI. Добавьте его в настройках ИИ → «Голосовой ввод».",
+     "OVERLOADED": "Сервис OpenAI перегружен. Попробуйте позже.",
+     "PERMISSION": "У ключа OpenAI нет доступа к распознаванию речи.",
+     "PROVIDER_ERROR": "Сервис распознавания сейчас недоступен. Попробуйте позже.",
+     "RATE_LIMIT": "Слишком много запросов к OpenAI. Подождите и попробуйте снова.",
+     "RECORDING_TOO_LONG": "Запись слишком длинная.",
+     "TIMEOUT": "Распознавание не завершилось вовремя. Попробуйте ещё раз.",
+     "TRUNCATED_TEXT": "Сообщение достигло предела в 2000 символов — часть распознанного текста не поместилась.",
+     "generic": "Не удалось распознать речь. Попробуйте ещё раз."
+    },
+    "recording": "Идёт запись {time}. Нажмите на микрофон ещё раз, чтобы закончить.",
+    "start": "Голосовой ввод: начать запись",
+    "stop": "Остановить запись",
+    "transcribing": "Распознаю речь…"
+   },
+   "you": "Вы"
+  },
+  "board": {
+   "columnCountFiltered": "{shown} из {total}",
+   "columnEmpty": "Нет задач",
+   "columnNoMatches": "Нет совпадений",
+   "columnTaskCount": {
+    "few": "{count} задачи",
+    "many": "{count} задач",
+    "one": "{count} задача",
+    "other": "{count} задачи"
+   },
+   "dropHere": "Перетащите задачу сюда",
+   "label": "Канбан-доска",
+   "sampleNotice": "Демонстрационные задачи"
+  },
+  "bulk": {
+   "category": "Категория…",
+   "categoryLabel": "Изменить категорию выбранных задач",
+   "clear": "Снять выделение",
+   "confirmButton": "Удалить ({count})",
+   "confirmMessage": {
+    "few": "Будут удалены {count} задачи. Это действие нельзя отменить.",
+    "many": "Будет удалено {count} задач. Это действие нельзя отменить.",
+    "one": "Будет удалена {count} задача. Это действие нельзя отменить.",
+    "other": "Будет удалено {count} задачи. Это действие нельзя отменить."
+   },
+   "confirmTitle": "Удалить выбранные задачи?",
+   "delete": "Удалить",
+   "dueDate": "Срок…",
+   "markDone": "Выполнено",
+   "priority": "Приоритет…",
+   "priorityLabel": "Изменить приоритет выбранных задач",
+   "selected": {
+    "few": "Выбраны {count} задачи",
+    "many": "Выбрано {count} задач",
+    "one": "Выбрана {count} задача",
+    "other": "Выбрано {count} задачи"
+   },
+   "status": "Статус…",
+   "statusLabel": "Изменить статус выбранных задач",
+   "toolbar": "Действия с выбранными задачами"
+  },
+  "categories": {
+   "add": "Добавить категорию",
+   "create": "Создать",
+   "createTitle": "Новая категория",
+   "delete": "Удалить",
+   "deleteChoice": "Куда перенести задачи",
+   "deleteConfirm": "Удалить категорию",
+   "deleteEmpty": "В этой категории нет задач.",
+   "deleteHasTasks": {
+    "few": "В категории {count} задачи. Они не будут удалены — выберите, куда их перенести.",
+    "many": "В категории {count} задач. Они не будут удалены — выберите, куда их перенести.",
+    "one": "В категории {count} задача. Она не будет удалена — выберите, куда её перенести.",
+    "other": "В категории {count} задачи. Они не будут удалены — выберите, куда их перенести."
+   },
+   "deleteNamed": "Удалить категорию «{name}»",
+   "deleteTitle": "Удалить категорию «{name}»?",
+   "emptyHint": "Создайте категорию, чтобы группировать задачи.",
+   "errors": {
+    "duplicate": "Категория с таким названием уже есть.",
+    "required": "Введите название категории."
+   },
+   "moveToCategory": "Перенести в категорию",
+   "moveToUncategorized": "Перенести в «Без категории»",
+   "nameLabel": "Название",
+   "namePlaceholder": "Название категории",
+   "rename": "Переименовать",
+   "renameNamed": "Переименовать категорию «{name}»",
+   "renameTitle": "Переименовать категорию",
+   "targetCategory": "Категория для задач",
+   "taskCount": {
+    "few": "{count} задачи",
+    "many": "{count} задач",
+    "one": "{count} задача",
+    "other": "{count} задачи"
+   }
+  },
+  "columns": {
+   "done": "Готово",
+   "inProgress": "В работе",
+   "todo": "К выполнению"
+  },
+  "confirmDelete": {
+   "confirm": "Удалить",
+   "message": "Задача «{title}» будет удалена. Это действие нельзя отменить.",
+   "title": "Удалить задачу?"
+  },
+  "datePicker": {
+   "choose": "Выбор срока",
+   "clear": "Убрать срок",
+   "in7Days": "Через 7 дней",
+   "nextMonth": "Следующий месяц",
+   "nextWeek": "Следующая неделя",
+   "noDate": "Без срока",
+   "prevMonth": "Предыдущий месяц",
+   "quick": "Быстрый выбор срока",
+   "quickOption": "{name}: {date}",
+   "today": "Сегодня",
+   "tomorrow": "Завтра"
+  },
+  "discard": {
+   "confirm": "Закрыть без сохранения",
+   "keepEditing": "Продолжить редактирование",
+   "message": "Изменения в задаче будут потеряны.",
+   "title": "Закрыть без сохранения?"
+  },
+  "dnd": {
+   "cancelled": "Перемещение отменено. Задача «{title}» осталась на прежнем месте.",
+   "dropped": "Задача «{title}» перемещена: колонка «{column}», позиция {position} из {total}.",
+   "handle": "Переместить задачу «{title}»",
+   "handleTitle": "Перетащите, чтобы переместить",
+   "instructions": "Чтобы взять задачу, нажмите пробел или Enter. Перемещайте её клавишами со стрелками, затем нажмите пробел или Enter, чтобы оставить её на новом месте, или Escape, чтобы отменить перемещение.",
+   "movedOver": "Колонка «{column}», позиция {position} из {total}.",
+   "notOver": "Задача «{title}» находится вне колонок.",
+   "pickedUp": "Задача «{title}» взята. Колонка «{column}», позиция {position} из {total}.",
+   "roleDescription": "перемещаемая задача"
+  },
+  "error": {
+   "message": "В интерфейсе произошла ошибка. Сохранённые задачи не пострадали — перезагрузите окно, чтобы продолжить.",
+   "reload": "Перезагрузить",
+   "title": "Что-то пошло не так"
+  },
+  "filters": {
+   "button": "Фильтры",
+   "due": "Срок",
+   "dueOptions": {
+    "overdue": "Просроченные",
+    "today": "На сегодня",
+    "upcoming": "Предстоящие"
+   },
+   "labels": "Метки",
+   "noLabels": "Меток пока нет",
+   "priority": "Приоритет",
+   "status": "Статус"
+  },
+  "header": {
+   "today": "Сегодня, {date}"
+  },
+  "language": {
+   "label": "Язык интерфейса",
+   "switchTo": "Переключить на {name}"
+  },
+  "layout": {
+   "board": "Доска",
+   "label": "Вид",
+   "list": "Список"
+  },
+  "list": {
+   "actions": "Действия",
+   "changeStatus": "Статус задачи «{title}»",
+   "empty": "Здесь пока нет задач.",
+   "label": "Список задач",
+   "selectAll": "Выбрать все видимые задачи",
+   "selectTask": "Выбрать задачу «{title}»",
+   "status": "Статус",
+   "task": "Задача"
+  },
+  "nav": {
+   "allTasks": "Все задачи",
+   "mainLabel": "Основная навигация",
+   "sectionCategories": "Категории",
+   "sectionTasks": "Задачи",
+   "uncategorized": "Без категории"
+  },
+  "priority": {
+   "high": "Высокий",
+   "label": "Приоритет",
+   "low": "Низкий",
+   "medium": "Средний"
+  },
+  "sample": {
+   "labels": {
+    "bug": "Ошибка",
+    "design": "Дизайн",
+    "dev": "Разработка",
+    "docs": "Документация",
+    "planning": "Планирование",
+    "research": "Исследование",
+    "ui": "Интерфейс"
+   },
+   "tasks": {
+    "t1": {
+     "description": "Определить цели на две недели и распределить задачи между участниками команды.",
+     "title": "Подготовить план спринта"
+    },
+    "t2": {
+     "description": "Добавить раздел о рабочих процессах и актуальные скриншоты.",
+     "title": "Обновить руководство для новичков"
+    },
+    "t3": {
+     "description": "Провести пять коротких интервью и сгруппировать ключевые наблюдения.",
+     "title": "Собрать отзывы пользователей"
+    },
+    "t4": {
+     "description": "Упростить структуру разделов и выровнять отступы по новой сетке.",
+     "title": "Переработать экран настроек"
+    },
+    "t5": {
+     "description": "Уведомления приходят с опозданием после выхода компьютера из спящего режима.",
+     "title": "Исправить задержку уведомлений"
+    },
+    "t6": {
+     "description": "Покрыть основные сценарии экспорта и граничные случаи с пустыми данными.",
+     "title": "Написать тесты для модуля отчётов"
+    },
+    "t7": {
+     "description": "Сборка запускается при каждом изменении основной ветки.",
+     "title": "Настроить автоматическую сборку"
+    },
+    "t8": {
+     "description": "Тёмная тема с мятными акцентами согласована с командой.",
+     "title": "Утвердить цветовую палитру"
+    }
+   }
+  },
+  "schedule": {
+   "dueTime": "Время срока",
+   "estimate": "Оценка, мин",
+   "every": {
+    "daily": "Каждый день",
+    "dailyN": {
+     "few": "Каждые {count} дня",
+     "many": "Каждые {count} дней",
+     "one": "Каждый {count} день",
+     "other": "Каждые {count} дня"
+    },
+    "monthly": "Каждый месяц",
+    "monthlyN": {
+     "few": "Каждые {count} месяца",
+     "many": "Каждые {count} месяцев",
+     "one": "Каждый {count} месяц",
+     "other": "Каждые {count} месяца"
+    },
+    "weekly": "Каждую неделю",
+    "weeklyN": {
+     "few": "Каждые {count} недели",
+     "many": "Каждые {count} недель",
+     "one": "Каждую {count} неделю",
+     "other": "Каждые {count} недели"
+    }
+   },
+   "freq": {
+    "daily": "Каждый день",
+    "monthly": "Каждый месяц",
+    "weekly": "Каждую неделю"
+   },
+   "interval": {
+    "daily": "Каждые N дней",
+    "monthly": "Каждые N месяцев",
+    "weekly": "Каждые N недель"
+   },
+   "monthlyHint": "{day}-го числа; в коротких месяцах — в последний день.",
+   "needsDate": "Сначала укажите срок — тогда можно добавить время, напоминания и повтор.",
+   "noRepeat": "Не повторять",
+   "onDays": "{rule}: {days}",
+   "onMonthDay": "{rule}, {day}-го числа",
+   "plannedInfo": "По плану дня: {date}, {time} (это не срок).",
+   "reminderAtTime": "В момент срока",
+   "reminderDays": {
+    "few": "За {count} дня",
+    "many": "За {count} дней",
+    "one": "За {count} день",
+    "other": "За {count} дня"
+   },
+   "reminderHours": {
+    "few": "За {count} часа",
+    "many": "За {count} часов",
+    "one": "За {count} час",
+    "other": "За {count} часа"
+   },
+   "reminderMinutes": {
+    "few": "За {count} минуты",
+    "many": "За {count} минут",
+    "one": "За {count} минуту",
+    "other": "За {count} минуты"
+   },
+   "reminderOnDay": "В день срока",
+   "reminderWeeks": {
+    "few": "За {count} недели",
+    "many": "За {count} недель",
+    "one": "За {count} неделю",
+    "other": "За {count} недели"
+   },
+   "reminders": "Напоминания",
+   "removePlan": "Убрать из плана",
+   "repeat": "Повтор",
+   "repeatHint": "Срок — ближайшее повторение. Когда вы отмечаете задачу выполненной, она переносится на следующее повторение (пропущенные пропускаются).",
+   "title": "Время, напоминания и повтор",
+   "weekdays": {
+    "0": "Вс",
+    "1": "Пн",
+    "2": "Вт",
+    "3": "Ср",
+    "4": "Чт",
+    "5": "Пт",
+    "6": "Сб"
+   },
+   "weekdaysLabel": "Дни недели"
+  },
+  "stats": {
+   "done": "Выполнено",
+   "label": "Статистика задач",
+   "noTasks": "Задач нет",
+   "overdue": "Просрочено",
+   "percent": "{percent}%",
+   "progress": "Доля выполненных задач",
+   "progressTitle": "Выполнено {done} из {total}",
+   "total": "Всего"
+  },
+  "storage": {
+   "copySaved": "Исходный файл сохранён как {file}.",
+   "dismiss": "Скрыть",
+   "newerVersion": "Данные созданы более новой версией Taskflow. Чтобы не повредить их, изменения не будут сохраняться.",
+   "readError": "Не удалось открыть файл с задачами. Чтобы не повредить его, изменения не будут сохраняться. Перезапустите приложение.",
+   "recovered": "Файл с задачами был повреждён. Восстановлена последняя сохранённая копия.",
+   "repaired": "Часть сохранённых данных была некорректной и исправлена.",
+   "retry": "Повторить",
+   "saveFailed": "Не удалось сохранить изменения.",
+   "saveFailedDetail": "Изменения доступны, пока приложение открыто. Попробуйте сохранить ещё раз.",
+   "unavailable": "Хранилище недоступно: изменения не сохранятся после закрытия.",
+   "unreadable": "Не удалось прочитать сохранённые задачи, поэтому открыта пустая доска."
+  },
+  "subtasks": {
+   "add": "Добавить",
+   "delete": "Удалить подзадачу «{title}»",
+   "limit": {
+    "few": "Можно добавить не более {count} подзадач.",
+    "many": "Можно добавить не более {count} подзадач.",
+    "one": "Можно добавить не более {count} подзадачи.",
+    "other": "Можно добавить не более {count} подзадачи."
+   },
+   "new": "Новая подзадача",
+   "open": "Добавить подзадачи",
+   "placeholder": "Новая подзадача",
+   "progress": "Подзадачи: выполнено {done} из {total}",
+   "title": "Подзадачи",
+   "titleLabel": "Название подзадачи {number}",
+   "toggle": "Подзадача «{title}» выполнена",
+   "untitled": "Подзадача {number}"
+  },
+  "task": {
+   "completed": "Выполнено",
+   "dateTime": "{date}, {time}",
+   "deleteTask": "Удалить задачу «{title}»",
+   "due": "Срок: {date}",
+   "dueOverdue": "Просрочено, срок был {date}",
+   "dueToday": "Сегодня",
+   "dueTodayFull": "Срок сегодня, {date}",
+   "dueTomorrow": "Завтра",
+   "dueTomorrowFull": "Срок завтра, {date}",
+   "editTask": "Редактировать задачу «{title}»",
+   "estimate": {
+    "few": "{count} минуты",
+    "many": "{count} минут",
+    "one": "{count} минута",
+    "other": "{count} минуты"
+   },
+   "hasReminders": "Напоминания: {list}",
+   "labels": "Метки",
+   "overdue": "Просрочено",
+   "planned": "По плану: {date}, {time}",
+   "repeats": "Повторяется: {rule}"
+  },
+  "taskForm": {
+   "category": "Категория",
+   "createSubtitle": "Задача появится в колонке «{column}».",
+   "createTitle": "Новая задача",
+   "description": "Описание",
+   "descriptionPlaceholder": "Добавьте подробности, ссылки или критерии готовности",
+   "dueDate": "Срок",
+   "editSubtitle": "Измените нужные поля и сохраните задачу.",
+   "editTitle": "Редактирование задачи",
+   "labels": "Метки",
+   "labelsHint": "Нажмите Enter или запятую, чтобы добавить метку.",
+   "labelsLimit": {
+    "few": "Можно добавить не более {count} меток.",
+    "many": "Можно добавить не более {count} меток.",
+    "one": "Можно добавить не более {count} метки.",
+    "other": "Можно добавить не более {count} метки."
+   },
+   "labelsPlaceholder": "Введите метку",
+   "labelsSuggestions": "Уже использовались:",
+   "optional": "необязательно",
+   "removeLabel": "Удалить метку «{label}»",
+   "title": "Название",
+   "titlePlaceholder": "Например, подготовить отчёт за квартал"
+  },
+  "toast": {
+   "bulkCategory": {
+    "few": "{count} задачи перенесены в «{category}»",
+    "many": "{count} задач перенесено в «{category}»",
+    "one": "{count} задача перенесена в «{category}»",
+    "other": "{count} задачи перенесены в «{category}»"
+   },
+   "bulkCompleted": {
+    "few": "{count} задачи отмечены выполненными",
+    "many": "{count} задач отмечено выполненными",
+    "one": "{count} задача отмечена выполненной",
+    "other": "{count} задачи отмечены выполненными"
+   },
+   "bulkDeleted": {
+    "few": "Удалены {count} задачи",
+    "many": "Удалено {count} задач",
+    "one": "Удалена {count} задача",
+    "other": "Удалено {count} задачи"
+   },
+   "bulkDueCleared": {
+    "few": "Срок убран у {count} задач",
+    "many": "Срок убран у {count} задач",
+    "one": "Срок убран у {count} задачи",
+    "other": "Срок убран у {count} задачи"
+   },
+   "bulkDueDate": {
+    "few": "Срок {date} установлен для {count} задач",
+    "many": "Срок {date} установлен для {count} задач",
+    "one": "Срок {date} установлен для {count} задачи",
+    "other": "Срок {date} установлен для {count} задачи"
+   },
+   "bulkNoChange": "Выбранные задачи уже в этом состоянии — ничего не изменено.",
+   "bulkPriority": {
+    "few": "Приоритет «{priority}» установлен для {count} задач",
+    "many": "Приоритет «{priority}» установлен для {count} задач",
+    "one": "Приоритет «{priority}» установлен для {count} задачи",
+    "other": "Приоритет «{priority}» установлен для {count} задачи"
+   },
+   "bulkStatus": {
+    "few": "{count} задачи перемещены в «{status}»",
+    "many": "{count} задач перемещено в «{status}»",
+    "one": "{count} задача перемещена в «{status}»",
+    "other": "{count} задачи перемещены в «{status}»"
+   },
+   "bulkUnavailable": "Выбранные задачи больше недоступны. Ничего не изменено.",
+   "categoryCreated": "Категория «{name}» создана",
+   "categoryDeleted": "Категория «{name}» удалена",
+   "categoryDeletedMoved": {
+    "few": "Категория «{name}» удалена, {count} задачи перенесены в «{target}»",
+    "many": "Категория «{name}» удалена, {count} задач перенесено в «{target}»",
+    "one": "Категория «{name}» удалена, {count} задача перенесена в «{target}»",
+    "other": "Категория «{name}» удалена, {count} задачи перенесены в «{target}»"
+   },
+   "categoryRenamed": "Категория переименована в «{name}»",
+   "dismiss": "Закрыть уведомление",
+   "region": "Уведомления",
+   "statusChanged": "Задача «{title}» перемещена в «{status}»",
+   "taskCreated": "Задача «{title}» создана",
+   "taskDeleted": "Задача «{title}» удалена",
+   "taskUpdated": "Задача «{title}» сохранена"
+  },
+  "toolbar": {
+   "clearSearch": "Очистить поиск",
+   "searchLabel": "Поиск по названию и описанию",
+   "searchPlaceholder": "Поиск по задачам",
+   "sort": {
+    "dueDate": "По сроку",
+    "manual": "Ручной порядок",
+    "priority": "По приоритету",
+    "title": "По названию"
+   },
+   "sortLabel": "Сортировка"
+  },
+  "validation": {
+   "subtaskRequired": "Введите название подзадачи.",
+   "titleRequired": "Введите название задачи."
+  },
+  "view": {
+   "categoryEmpty": "В этом разделе пока нет задач. Создайте задачу кнопкой «Новая задача».",
+   "dragDisabled": "При поиске, фильтрах и сортировке задачи можно переносить между колонками, но не менять их порядок. Сбросьте их, чтобы менять порядок.",
+   "noMatches": "Ничего не найдено",
+   "noMatchesHint": "Ни одна задача не подходит под поиск и фильтры. Сами задачи не изменены.",
+   "noTasksYet": "Задач пока нет. Создайте первую задачу кнопкой «Новая задача».",
+   "removeFilter": "Убрать «{name}»",
+   "resetAll": "Сбросить всё",
+   "searchChip": "Поиск: «{query}»",
+   "showing": "Показано {shown} из {total}"
+  }
+ }
+}
